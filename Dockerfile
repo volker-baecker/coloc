@@ -48,7 +48,7 @@ RUN cd /fiji/macros && wget -O coloc.ijm https://gist.githubusercontent.com/volk
 RUN cd /fiji && wget -O run-coloc.sh https://gist.githubusercontent.com/volker-baecker/42e720f3174b52b583f32299867d4c6b/raw/57a843e81086e6313e865786cc94de91993a4d32/run-coloc.sh && chmod a+x run-coloc.sh
 
 RUN cd /fiji/macros && wget -O metrics.ijm https://gist.githubusercontent.com/volker-baecker/f298621247e62011ba3913d70af9ffed/raw/0a9803e955ba3adfae608adf78b09de1e1f540c3/metrics.ijm
-RUN cd /fiji && wget -O run-metrics.sh https://gist.githubusercontent.com/volker-baecker/1a273b28c62d010ab5c266d71b89ba64/raw/8b161bf719559bbac12dfd3620f4dd4542a0a99d/run-metrics.sh && chmod a+x run-metrics.sh
+RUN cd /fiji && wget -O run-metrics.sh https://gist.githubusercontent.com/volker-baecker/1a273b28c62d010ab5c266d71b89ba64/raw/52ec60fd96cc5654f35f54987087ac08bac5ba82/run-metrics.sh && chmod a+x run-metrics.sh
 
 # Define default command.
 CMD ["fiji-linux64"]
