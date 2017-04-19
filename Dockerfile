@@ -2,8 +2,6 @@ FROM baecker/fiji-base:latest
 
 RUN cd plugins && wget -O jacop_.jar http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:jacop_2.0:just_another_colocalization_plugin:jacop_.jar
 
-RUN mkdir /fiji/data
-
 RUN cd /fiji/macros && wget -O coloc.ijm https://gist.githubusercontent.com/volker-baecker/6de91df9af79fd252436e8016f282adb/raw/92cc251927f6e76011f9ebfbeb2f8af3844bf489/coloc.ijm
 RUN cd /fiji && wget -O run-coloc.sh https://gist.githubusercontent.com/volker-baecker/42e720f3174b52b583f32299867d4c6b/raw/57a843e81086e6313e865786cc94de91993a4d32/run-coloc.sh && chmod a+x run-coloc.sh
 
